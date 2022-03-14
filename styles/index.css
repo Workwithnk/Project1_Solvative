@@ -1,0 +1,257 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow-y: hidden;
+}
+
+/* main page container */
+.pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* comman page style */
+.commanPageStyle {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pageNavigationLinks {
+  position: absolute;
+  right: 0%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* firstSec */
+#firstSec {
+  width: 100%;
+}
+
+.image_firstSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  border-radius: 20%;
+}
+.image_firstSec img {
+  width: 16rem;
+}
+
+.secDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.secDetails h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 3rem;
+}
+
+.secDetails p {
+  font-family: "Hubballi", cursive;
+  color: #7c8a99;
+  font-size: 1.5rem;
+  margin: 3% 0%;
+  text-indent: 5%;
+}
+
+.secDetails span {
+  font-family: "Hubballi", cursive;
+  color: #7c8a99;
+  font-size: 1rem;
+}
+
+.navigationBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: gray;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  padding: 1%;
+}
+
+.navigationBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.navigationArrowRight {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.navigationArrowLeft {
+  font-size: 25px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.image_teamlead {
+  height: 70%;
+}
+.details_secSec {
+  width: 400px;
+  padding: 2% 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.image_teamlead {
+  margin-right: 10px;
+}
+
+/* forth sec */
+#forthSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.innerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sixthSec */
+#sixthSec {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.image_sixthSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.image_sixthSec img {
+  height: 50vh;
+}
+.details_sixthSec {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+.details_sixthSec h4 {
+  color: #7c8a99;
+  font-size: 16px;
+  font-family: "Fredoka", sans-serif;
+}
+
+/* seventhsec */
+#seventhSec {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+  /* #firstSec */
+  #firstSec {
+    flex-direction: column;
+  }
+
+  /* comman style */
+  .commanPageStyle {
+    flex-direction: column;
+  }
+  .secDetails {
+    width: 80%;
+    margin-left: 0px;
+    margin-top: 3%;
+  }
+  .secDetails h1 {
+    font-size: 8vw;
+  }
+  .secDetails p {
+    font-size: 6vw;
+  }
+  .navigationBtn {
+    font-size: 5vw;
+  }
+  .image_teamlead {
+    margin-right: 0px;
+    height: 47vh;
+  }
+  .secDetails span {
+    font-size: 3vw;
+  }
+  .innerSec {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .innerSec img {
+    height: 27vh;
+  }
+
+  /* secondsec */
+  .details_secSec p {
+    font-size: 15px;
+  }
+
+  /* sixthSec */
+  #sixthSec {
+    justify-content: space-around;
+  }
+  .image_sixthSec {
+    width: 100%;
+  }
+  .image_sixthSec img {
+    height: auto;
+  }
+  .details_sixthSec > ol > li > span {
+    font-size: 5vw;
+  }
+  /* seventhSec */
+  #seventhSec {
+    justify-content: space-around;
+  }
+  .image_seventhSec {
+    width: 100%;
+  }
+  .image_seventhSec img {
+    height: auto;
+  }
+
+  /*Page links */
+  .navigationBtn {
+    font-size: 4vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 2%;
+  }
+
+  .navigationArrowLeft {
+    font-size: 4vw;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+  .navigationArrowRight {
+    font-size: 4vw;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+}
